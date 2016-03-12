@@ -1,0 +1,66 @@
+// Place all the styles related to the cos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+background-color: black;
+}
+
+.header {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  img {
+    height: 341px;
+    width: 180px;
+  }
+}
+
+
+.navbar {
+  border-style: none;
+  background-color: black;
+  a {
+    color: rgb(171, 181, 174);
+    font-weight: bold;
+  }
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: rgb(140, 15, 7);
+}
+
+.affix {
+  top: 0;
+  z-index: 100;
+}
+
+.welcome {
+  height: 341px;
+  color: rgb(190, 85, 9);
+  font-size: 20px;
+}
+
+.welcome-scroll {
+  height: 341px;
+  margin-top: 50px;
+  color: rgb(190, 85, 9);
+  font-size: 20px;
+}
+
+.music {
+  height: 750px;
+  background-image: url("http://i.imgur.com/B3nAM6x.jpg?1");
+}
+
+.soundcloud {
+  margin-top: 10%;
+}
+
+.youtube {
+  margin-top: 5%;
+  margin-left: 275px;
+}
+
+.shows{
+  height: 350px;
+}
