@@ -63,6 +63,8 @@ background-color: black;
 
 .shows{
   height: 350px;
+  padding-top: 50px;
+  background-color: rgb(11, 12, 42);
 }
 
 .fake-footer {
@@ -75,4 +77,46 @@ background-color: black;
     height: 180px;
     width: 341px;
   }
+}
+
+.show_poster {
+  height: 180px;
+  width: 150px;
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.modal-header {
+  background-color: black;
+  .close {
+    color: white;
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  text-align: center;
+  background-color: black;
+}
+
+#large_poster {
+  height: 500px;
+  width: auto;
+}
+
+.shpadoinkle {
+  height: 300px;
+  color: rgb(171, 181, 174);
+}
+
+.name {
+  text-align: center;
+  color: rgb(171, 181, 174);
+  padding-bottom: 10px;
+}
+
+.logos {
+  padding-bottom: 25px;
 }

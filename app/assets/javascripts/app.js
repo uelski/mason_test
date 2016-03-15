@@ -25,6 +25,18 @@ $("#shows-link").click(function() {
 scrollTime('shows-section')
 });
 
+$('#shpadoinkle-link').click(function(){
+  scrollTime('shpadoinkle-section')
+})
+
+$('#contact-link').click(function() {
+  scrollTime('contact-section')
+})
+
+$('#poster').click(function () {
+  $('#poster_modal').modal('show');
+});
+
 })//end of document.ready
 
 function removeStickers() {
