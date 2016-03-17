@@ -37,6 +37,17 @@
           We Play Music
         </p>
       </div>
+      <div class="col-md-4 email">
+        <h4>Join our mailing list</h4>
+        <%= form_for(@user) do |f| %>
+          <%= @message %>
+
+          <%= f.label :email %>
+          <%= f.email_field :email %>
+
+          <%= f.submit 'Sign Up', class: 'btn btn-primary'%>
+        <% end %>
+      </div>
     </div>
   </div>
 
