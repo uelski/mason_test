@@ -89,10 +89,15 @@ background-color: black;
 }
 
 .modal-header {
+  text-align: center;
   background-color: black;
   .close {
     color: white;
     opacity: 1;
+  }
+  span {
+    color: white;
+    font-size: 16px;
   }
 }
 

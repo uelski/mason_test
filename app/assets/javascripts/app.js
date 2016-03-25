@@ -1,6 +1,18 @@
 $(document).ready(function(){
   console.log("connected")
 
+  $('#new_user').bind("ajax:error", function(e, data, status, xhr){
+    $('#email_message').replaceWith("<span id='email_error'>There was an error, please try again</span>");
+    $('#email_success').replaceWith("<span id='email_error'>There was an error, please try again</span>");
+    $('#user_email').val('');
+  });
+
+  $('#new_user').on("ajax:success", function(e, data, status, xhr){
+    $('#email_message').replaceWith("<span id='email_success'>Thanks for signing up!</span>");
+    $('#email_error').replaceWith("<span id='email_success'>Thanks for signing up!</span>");
+    $('#user_email').val('');
+  });
+
   $('#nav').affix({
     offset: {
       top: $('.header').height()

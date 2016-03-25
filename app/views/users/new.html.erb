@@ -39,8 +39,9 @@
       </div>
       <div class="col-md-4 email">
         <h4>Join our mailing list</h4>
-        <%= form_for(@user) do |f| %>
-          <%= @message %>
+        <span id="email_message"></span>
+        <%= form_for(@user, remote: true) do |f| %>
+
 
           <%= f.label :email %>
           <%= f.email_field :email %>
@@ -93,6 +94,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
+              <span>04/08/2016</span>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
@@ -114,7 +116,6 @@
   </div>
   <div id="shpadoinkle-section" class="row shpadoinkle">
     <div class="col-md-4 col-md-offset-4">
-      <h2>Random Stuff Here!</h2>
     </div>
   </div>
   <hr>

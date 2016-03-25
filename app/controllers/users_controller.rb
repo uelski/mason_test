@@ -7,13 +7,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      @message = 'Thanks for signing up!'
+      SubscribeJob.new.async.perform(@user.id)
+
       render 'new'
     else
-      @message = 'There was an error in sign up, please try again'
+      format.json { render :json => { :error => @user.errors.full_messages }, :status => 422 }
       render 'new'
     end
   end
+
+
 
   private
 
