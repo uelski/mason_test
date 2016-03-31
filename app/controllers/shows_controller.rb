@@ -1,5 +1,5 @@
 class ShowsController < ApplicationController
-  
+
 
   def new
     @show = Show.new
@@ -8,7 +8,7 @@ class ShowsController < ApplicationController
   def create
     @show = Show.new(show_params)
     if @show.save
-      redirect_to root_path
+      render root_path
     else
       render 'new'
     end

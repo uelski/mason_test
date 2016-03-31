@@ -45,9 +45,6 @@ $('#contact-link').click(function() {
   scrollTime('contact-section')
 })
 
-$('#poster').click(function () {
-  $('#poster_modal').modal('show');
-});
 
 })//end of document.ready
 

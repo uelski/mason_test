@@ -1,4 +1,3 @@
-<div id="shows-section" class="row shows">
   <% @shows.each do |show| %>
   <div class="col-md-6 col-md-offset-1">
     <div class="panel panel-default">
@@ -22,9 +21,9 @@
   </div>
   <div class="col-md-4 col-md-offset-1 show_poster">
 
-    <img id="poster" class="thumbnail" src="<%= show.poster_url %>" alt="show poster" />
+    <a href="#poster_modal<%= show.id %>" data-toggle="modal"><img id="poster<%= show.id %>" class="thumbnail" src="<%= show.poster_url %>" alt="show poster" /></a>
 
-    <div id="poster_modal" class="modal fade" tabindex="-1" role="dialog">
+    <div id="poster_modal<%= show.id %>" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -39,4 +38,3 @@
     </div>
   </div>
   <% end %>
-</div>

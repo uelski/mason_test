@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    @shows = Show.all
+    @shows = Show.all.order("date DESC")
   end
 
   def create
