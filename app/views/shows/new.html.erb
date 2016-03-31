@@ -1,0 +1,31 @@
+<h1>New Show, Alright!</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@show) do |f| %>
+
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+
+      <%= f.label :show_url %>
+      <%= f.text_field :show_url, class: 'form-control' %>
+
+      <%= f.label :venue_name %>
+      <%= f.text_field :venue_name, class: 'form-control' %>
+
+      <%= f.label :venue_link %>
+      <%= f.text_field :venue_link, class: 'form-control' %>
+
+      <%= f.label :date %>
+      <%= f.date_field :date, class: 'form-control' %>
+
+      <%= f.label :ticket_url %>
+      <%= f.text_field :ticket_url, class: 'form-control' %>
+
+      <%= f.label :poster_url %>
+      <%= f.text_field :poster_url, class: 'form-control' %>
+
+      <%= f.submit "Cos On", class:"btn btn-primary" %>
+
+    <% end %>
+  </div>
+</div>
