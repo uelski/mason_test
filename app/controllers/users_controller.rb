@@ -9,10 +9,11 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       SubscribeJob.new.async.perform(@user.id)
-
+      @shows = Show.all.order("date DESC")
       render 'new'
     else
       format.json { render :json => { :error => @user.errors.full_messages }, :status => 422 }
+      @shows = Show.all.order("date DESC")
       render 'new'
     end
   end
