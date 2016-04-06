@@ -24,13 +24,13 @@
     </div>
   </div>
   <div class="row welcome">
-    <div class="col-md-5 col-md-offset-2 latest">
+    <div class="col-sm-5 col-sm-offset-2 latest">
       <h1>The Latest</h1>
       <p>Check out our show at <a href="#shows-section">Quencher's</a> April 8!</p>
       <p>New <a href="#music-section">music</a> coming soon.</p>
       <iframe width="70%" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/224234806&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div>
-    <div class="col-md-3 col-md-offset-2 email">
+    <div class="col-sm-3 col-sm-offset-2 email">
       <p>Join our mailing list</p>
       <span id="email_message"></span>
       <%= form_for(@user, remote: true) do |f| %>
@@ -46,15 +46,17 @@
 
   <div id="music-section" class="row music">
     <div class="row soundcloud">
-      <div class="col-md-4 col-md-offset-1">
+      <div class="col-sm-4 col-sm-offset-1">
         <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/224234846&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
       </div>
-      <div class="col-md-4 col-md-offset-1">
+      <div class="col-sm-4 col-sm-offset-1">
         <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/224234806&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
       </div>
     </div>
-    <div class="row youtube">
-        <iframe width="550" height="315" src="https://www.youtube.com/embed/nvAD12G6-B4" frameborder="0" allowfullscreen></iframe>
+    <div class="col-sm-4 col-sm-offset-2">
+      <div class="row youtube">
+          <iframe width="550" height="315" src="https://www.youtube.com/embed/nvAD12G6-B4" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
   <div id="shows-section" class="row shows">
