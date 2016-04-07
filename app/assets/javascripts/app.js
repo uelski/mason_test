@@ -37,8 +37,8 @@ $("#shows-link").click(function() {
 scrollTime('shows-section')
 });
 
-$('#shpadoinkle-link').click(function(){
-  scrollTime('shpadoinkle-section')
+$('#gallery-link').click(function(){
+  scrollTime('gallery-section')
 })
 
 $('#contact-link').click(function() {
